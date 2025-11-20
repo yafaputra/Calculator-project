@@ -1,0 +1,104 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    body {
+        background: #ffba4a;
+    }
+    
+    header {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 40px;
+        color: rgb(75, 74, 74);
+    }
+    
+    section {
+        margin-top: -50px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 400px;
+        background: #ff9532;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    
+    .display {
+        width: 100%;
+        height: 100px;
+        background-color: lightgray;
+        text-align: right;
+        border-radius: 10px 10px 0 0;
+        padding: 20px;
+        font-size: 30px;
+        position: relative;
+    }
+    
+    .display-history {
+        opacity: 0.4;
+        font-size: 20px;
+    }
+    
+    .temp-result {
+        font-size: 20px;
+        opacity: 0.4;
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+    
+    .Button-container {
+        display: grid;
+        grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    }
+    
+    .number-zero {
+        grid-column: span 2;
+    }
+    
+    .number-zero:hover,
+    .decimal:hover,
+    .number:hover {
+        background-color: #ffd699;
+    }
+    
+    .button {
+        padding: 20px;
+        font-size: 25px;
+        border: 0.5px solid #ddd;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        height: 80px;
+    }
+    
+    .all-clear:hover,
+    .last-entity:hover,
+    .operator:hover,
+    .equal-sign:hover {
+        background-color: #ffba4a;
+        color: white;
+    }
+    
+    .all-clear,
+    .last-entity,
+    .operator,
+    .equal-sign {
+        background-color: #f39c12;
+    }
